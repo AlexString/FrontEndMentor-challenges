@@ -12,6 +12,16 @@ body {
 	font-family: 'Overpass';
 	background-color: var(--very-dark-blue);
 }
+/* IDs  */
+#start {
+	display: none;
+	visibility: hidden;
+}
+
+#rating {
+	/* display: none;
+	visibility: hidden; */
+}
 
 .container {
 	display: flex;
@@ -21,7 +31,8 @@ body {
 	margin-top: 5%;
 }
 
-.card {
+.card,
+#rating .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -32,6 +43,30 @@ body {
 
 	border-radius: 25px;
 	padding: 35px;
+}
+
+#rating .card {
+	align-items: center;
+}
+
+#rating .select_message {
+	background-color: var(--dark-blue);
+	border-radius: 25px;
+	padding: 12px 20px;
+	/* padding-top: 15px; */
+
+	color: var(--yellow);
+}
+
+#rating div:first-child {
+	margin-top: 20px;
+}
+
+#rating div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
 
 .title {
